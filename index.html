@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TP-3</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+
+    <i class="fas fa-search"></i><input type="search" id="miBusqueda" name="q" placeholder="Search for a movie...">
+    </header>
+
+    <nav class="nav-list">
+            <div class="category-list ada-icon"><img src="assets/adalogo.svg" class="ada-logo"></div>
+        <ul>
+            
+            <li class="category-list">
+                <p><i class="far fa-star"></i></p>Popular
+            </li>
+            <li class="category-list">
+                <p><i class="fas fa-arrow-right"></i></p>Top Rated
+            </li>
+            <li class="category-list">
+                <p><i class="far fa-calendar-alt"></i></p>Upcoming
+            </li>
+            <li class="category-list">
+                <p><i class="far fa-play-circle"></p></i>Now Playing
+            </li>
+        </ul>
+    </nav>
+    <div class="anvorgueza-img hamburger" id="hamburger-1">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+    </div>
+
+    <!-- Popular Movies -->
+
+    <div class="movies-section">
+        <div class="banner-img">
+            <h1 class="banner-title">The movie D B APP</h1>
+        </div>
+        <div class="full-content">
+            <div class="header-titles">
+                <h1 class="category-title">Popular Movies</h1>
+                <div class="view-content">
+
+                    <span class="view-all">View All &#x27A1</span>
+                </div>
+            </div>
+
+            <div id="popular-movies">
+                <div class="category-wrap">
+
+                    <div class="img-container">
+
+                        <img src="assets/no-image.png" alt="">
+
+                        <p class="movie-title"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Rated  -->
+            <div class="header-titles">
+                <h1 class="category-title">Top RAted Movies</h1>
+                <div class="view-content">
+                    <span class="view-all">View All &#x27A1</span>
+                </div>
+            </div>
+
+
+            <div id="top-rated">
+                <div class="category-wrap">
+                    <div class="img-container">
+                        <img src="assets/no-image.png" alt="">
+                        <p class="movie-title"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Upcoming movies -->
+            <div class="header-titles">
+                <h1 class="category-title">Upcoming Movies</h1>
+                <div class="view-content">
+                    <span class="view-all">View All &#x27A1</span>
+                </div>
+            </div>
+
+
+            <div id="upcoming-movies">
+                <div class="category-wrap">
+
+                    <div class="img-container">
+                        <img src="assets/no-image.png" alt="">
+                        <p class="movie-title"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Now Playing -->
+            <div class="header-titles">
+                <h1 class="category-title">Now Playing Movies</h1>
+                <div class="view-content">
+                    <span class="view-all">View All &#x27A1</span>
+                </div>
+            </div>
+
+            <div id="now-playing">
+                <div class="category-wrap">
+                    <div class="img-container">
+                        <img src="assets/no-image.png" alt="">
+                        <p class="movie-title"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full movies -->
+
+            <div class="header-titles full-movies-title">
+                <h1 class="category-title"></h1>
+                <div class="view-content">
+                    <span class="view-all"></span>
+                </div>
+            </div>
+            <div id="full-movies">
+                <div class="category-wrap">
+                    <div class="img-container img-fullContainer">
+                        <img src="assets/no-image.png" alt="">
+                        <p class="movie-title"></p>
+                    </div>
+                </div>
+                <button type="submit" class="load-more-btn">LOAD MORE</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- popup -->
+    <div class="center-screen" id="movie-detail">
+        <div class="movie-popup">
+                <div class="close" id="close">×</div>
+            <div class="movie-poster">
+                <img src="" id="background" class="img-poster" alt="">
+                <div class="movie-title-popup">
+                    <h1 id="title"></h1>
+                    <span id="tagline" class="tagline"></span>
+                </div>
+            </div>
+            <div class="movie-description">
+                <p id="description"> </p>
+                <h3 class="genre-title">GENRES</h3>
+                <p id="genre"></p>
+                <h3 class="release-date">RELEASE DATE</h3>
+                <p id="date"></p>
+            </div>
+            <img src="" class="img-poster-2" id="poster" alt="">
+        </div>
+    </div>
+    <script src="home.js"></script>
+    </main>
+</body>
+
+</html>
