@@ -1,4 +1,4 @@
-# tp - 3 - la tortura llega a su fin ( o no)
+# tp - 3 - 
 
 les dejo una brujita de la suerte para que no me odien por entregar el tp 3 años despues 
 
